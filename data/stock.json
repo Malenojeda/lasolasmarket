@@ -4,7 +4,7 @@
     "nombre": "Joyero Crema",
     "tipo": "Joyeros",
     "precio": 700,
-    "img": "/Multimedia/productos/joyero-crema.svg",
+    "img": "Multimedia/productos/joyero-crema.svg",
     "cantidad": 1
   },
   {
@@ -12,7 +12,7 @@
     "nombre": "Joyero Manchas",
     "tipo": "Joyeros",
     "precio": 700,
-    "img": "/Multimedia/productos/joyero-manchas.svg",
+    "img": "Multimedia/productos/joyero-manchas.svg",
     "cantidad": 1
   },
   {
@@ -20,7 +20,7 @@
     "nombre": "Joyero Pasteles",
     "tipo": "Joyeros",
     "precio": 700,
-    "img": "/Multimedia/productos/joyero-pasteles.svg",
+    "img": "Multimedia/productos/joyero-pasteles.svg",
     "cantidad": 1
   },
   {
@@ -28,7 +28,7 @@
     "nombre": "Macetas Bicolor",
     "tipo": "Macetas",
     "precio": 1200,
-    "img": "/Multimedia/productos/maceta-bicolor.svg",
+    "img": "Multimedia/productos/maceta-bicolor.svg",
     "cantidad": 1
   },
   {
@@ -36,7 +36,7 @@
     "nombre": "Macetas Pocitos",
     "tipo": "Macetas",
     "precio": 1200,
-    "img": "/Multimedia/productos/maceta-pocitos.svg",
+    "img": "Multimedia/productos/maceta-pocitos.svg",
     "cantidad": 1
   },
   {
@@ -44,7 +44,7 @@
     "nombre": "Maceta Rainwood",
     "tipo": "Macetas",
     "precio": 1200,
-    "img": "/Multimedia/productos/maceta-rainwood.svg",
+    "img": "Multimedia/productos/maceta-rainwood.svg",
     "cantidad": 1
   },
   {
@@ -52,7 +52,7 @@
     "nombre": "Plato Limones",
     "tipo": "Platos",
     "precio": 8000,
-    "img": "/Multimedia/productos/plato-limones.svg",
+    "img": "Multimedia/productos/plato-limones.svg",
     "cantidad": 1
   },
   {
@@ -60,7 +60,7 @@
     "nombre": "Plato Ochentas",
     "tipo": "Platos",
     "precio": 800,
-    "img": "/Multimedia/productos/plato-ochentas.svg",
+    "img": "Multimedia/productos/plato-ochentas.svg",
     "cantidad": 1
   },
   {
@@ -68,7 +68,7 @@
     "nombre": "Plato Simetrico",
     "tipo": "Platos",
     "precio": 800,
-    "img": "/Multimedia/productos/plato-simetrico.svg",
+    "img": "Multimedia/productos/plato-simetrico.svg",
     "cantidad": 1
   },
   {
@@ -76,7 +76,7 @@
     "nombre": "Taza Flores",
     "tipo": "Tazas",
     "precio": 950,
-    "img": "/Multimedia/productos/taza-flores.svg",
+    "img": "Multimedia/productos/taza-flores.svg",
     "cantidad": 1
   },
   {
@@ -84,7 +84,7 @@
     "nombre": "Taza Frutilla",
     "tipo": "Tazas",
     "precio": 950,
-    "img": "/Multimedia/productos/taza-frutilla.svg",
+    "img": "Multimedia/productos/taza-frutilla.svg",
     "cantidad": 1
   },
   {
@@ -92,7 +92,7 @@
     "nombre": "Taza Pastel",
     "tipo": "Tazas",
     "precio": 950,
-    "img": "/Multimedia/productos/taza-pastel.svg",
+    "img": "Multimedia/productos/taza-pastel.svg",
     "cantidad": 1
   },
   {
@@ -100,7 +100,7 @@
     "nombre": "Porta Vela Oceano",
     "tipo": "Velas",
     "precio": 500,
-    "img": "/Multimedia/productos/vela-oceano.svg",
+    "img": "Multimedia/productos/vela-oceano.svg",
     "cantidad": 1
   },
   {
@@ -108,7 +108,7 @@
     "nombre": "Porta Vela Olas",
     "tipo": "Velas",
     "precio": 500,
-    "img": "/Multimedia/productos/vela-olas.svg",
+    "img": "Multimedia/productos/vela-olas.svg",
     "cantidad": 1
   },
   {
@@ -116,7 +116,7 @@
     "nombre": "Porta Vela Pastel",
     "tipo": "Velas",
     "precio": 500,
-    "img": "/Multimedia/productos/vela-pastel.svg",
+    "img": "Multimedia/productos/vela-pastel.svg",
     "cantidad": 1
   }
 ]
