@@ -1,0 +1,63 @@
+@import "varios";
+
+.footer{
+    background-color: $color_blanco;
+    &__li{
+        list-style: none;
+    }
+    &__a{
+        color: $font_color;
+        font-size: 1.1rem;
+        font-family: $font_lato;
+        &:hover{
+            color: $font_color;
+        }
+    }
+    .form{
+        margin-top: 3%;
+        font-family:$font_lato;
+        padding: 0%;
+    }
+    
+}
+
+.p-newsletter{
+    text-align: center;
+    font-family: $font_space;
+    font-size: 1.6rem;
+
+}
+
+.p-desarrollo{
+    font-size: 11px;
+    margin-top: 1%;
+    font-family:$font_lato;
+    background-color:$bg_desarrollo;
+}
+.row .d-flex .justify-content-center{
+    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+}
+.div-boton{
+    padding: 0%;
+}
+
+.boton-newsletter{
+    color: $font_boton-newsletter;
+    height: 20%;
+    border: none;
+    border-radius: 0px;
+    background-color: $color_blanco;
+    width: 20%;
+    margin-left: 40%;
+    font-family: $font_lato;
+    &:hover{
+        text-decoration-line: underline;
+    }
+}
+
+.text-center{
+    font-family: $font_lato;
+}

@@ -1,0 +1,67 @@
+@import "varios";
+@mixin li {
+    list-style: none;
+    list-style-type: none;
+    
+}
+
+/*Header sticky*/
+.sticky{
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+    background-color:$bg_sticky;
+    
+}
+
+/*Banner envios*/
+.div-banner{
+    
+    background-color: $bg_banner;
+    .p-banner{
+        text-align: center;
+        font-family: $font_space;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        color:$color_blanco;
+        font-size: 1.3rem;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+    }
+}
+
+/*Nav izquierdo*/
+.offcanvas-body{
+    &__li{
+        @include li;
+        padding-top: 10px;
+        font-size: 1.1rem;
+        color:$font_color;
+        font-family: $font_lato;
+    }
+    &__a{
+        text-decoration: none;
+        padding-top: 0px;
+        padding-left: 15px;
+        color:$font_color;
+        &:hover{
+            color:$font_color;
+            text-decoration-line: underline;
+        }
+        &-tienda{
+            color: $font_color;
+            &:hover{
+                color:$font_color;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
+
+
+
+
+
+

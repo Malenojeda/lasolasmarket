@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Envíos a todo el país. Todos los medios de pago. Tienda online de piezas únicas y artesanales ❤. ">
+    <meta name="keywords" content="cerámica artesanal, cerámica, regalo, artesanal, regalos originales, tienda online, macetas, tazas, vajilla, platos, plantas, envíos, envíos a todo el país, cuotas, deco, decoracion">
+    <title>Las Olas Ceramica</title>
+    <link rel="stylesheet" href="CSS/estilos.css"/>
+    <link rel="stylesheet" href="CSS/stylesTienda.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" href="/Multimedia/logo.svg" sizes="15x15">
+    
+</head>
+
+<body>
+    <header class="sticky">
+        <div class="div-banner">
+            <p class="p-banner">
+                Envios a todo el pais ♡ Todos los medios de pago
+            </p>
+        </div>
+        <!--Navbar derecho-->
+        <div class="position-absolute top-50 end-0">
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        </div>
+        <!--Fin navbar derecho-->
+        <!--Logo-->
+        <div >
+            <a  class="text-center" href="index.html">
+                <img class="img-logo"  src="Multimedia/logo.svg" alt="Las Olas">
+            </a>
+        </div>
+        <!--fin logo-->
+    </header>
+
+    <!--Seleccion de talles-->
+    <select id="selecTipo" class="selecTalles">
+        <option value="all">Todos los productos</option>
+        <option value="Joyeros">Joyeros</option>
+        <option value="Macetas">Macetas</option>
+        <option value="Platos">Platos</option>
+        <option value="Tazas">Tazas</option>
+        <option value="Velas">Porta Velas</option>
+    </select>
+    <!--Fin seleccion de talles-->
+
+    <!--Productos-->
+    <main id="contenedor-productos"></main>
+    <!--Fin productos--> 
+
+    <!--Carrito de compras-->
+    <div class="modal-contenedor">
+        <div class="modal-carrito">
+            <h5>Carrito de compras</h5>
+            <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+            <div id="carrito-contenedor"></div>
+            <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+            <div class="boton-finalizar" id="terminar" style="display: flex; justify-content: flex-end;"></div>
+        </div>
+    </div>
+    <!--Fin carrito de compras-->
+
+    <!-- Modal tarjeta de credito -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <h4>Finalizá la compra</h4>
+                <div class="container">
+                    <div class="col1">
+                        <div class="card">
+                            <div id="front" class="front">
+                                <div class="type">
+                                    <img class="bankid"/>
+                                </div>
+                                <span class="chip"></span>
+                                <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+                                <div class="date"><span class="date_value">MM / YYYY</span></div>
+                                <span class="fullname">TITULAR</span>
+                            </div>
+                            <div id="back" class="back">
+                                <div class="magnetic"></div>
+                                <div class="bar"></div>
+                                <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+                                <span class="chip"></span><span class="disclaimer"> </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col2">
+                        <label>Número de tarjeta</label>
+                        <input class="number" type="text" required ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                        <label>Nombre del titular</label>
+                        <input class="inputname" type="text" required placeholder=""/>
+                        <label>Fecha de vencimiento</label>
+                        <input class="expire" type="text" required placeholder="MM / YYYY"/>
+                        <label>Número de seguridad</label>
+                        <input class="ccv" type="text" placeholder="CVC" required maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57'/>
+                        <label>E-mail</label>
+                        <input class="email" type="text" required placeholder=""/>
+                        <button id="fin-compra" class="buy"><i class="material-icons"></i>Pagar $<span id="pagar">--.--</span></button>
+                    </div>
+                    <div></div>
+                        <a href="#" class="modal-close waves-effect waves-grey btn-flat"  style="text-align: right;"><i class="far fa-times-circle"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fin tarjeta de credito-->
+
+    <!--footer-->
+    <footer>
+        <hr />
+        <section class="text-center">
+            <p> 💌 lasolas@gmail.com / 📞Whatsapp 1178958672 - Lun a Vier 9:00 a 17:00hs
+            </p>
+        </section>
+        <section class="text-center">
+            <div class="text-center">
+                <div>
+                    <section class="text-center">
+                        <a style="color: #dd4b39;" href="https://myaccount.google.com/" target="_blank" role="button"><i class="fab fa-google fa-lg"></i></a>
+                        <a style="color: #ac2bac;" href="https://www.instagram.com/" target="_blank"href="#!" role="button"><i class="fab fa-instagram fa-lg"></i></a>
+                    </section>
+                    <div>
+                        <p class="p-desarrollo">Desarrollado por Malen Ojeda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- fin de footer-->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script src="/JS/modal.js"></script>
+    <script src="/JS/checkout.js"></script>
+    <script src="/JS/app.js"></script>
+
+</body>
+</HTml>
