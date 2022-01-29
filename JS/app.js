@@ -149,10 +149,7 @@ $.getJSON('data/stock.json', function(data){
     data.forEach(elemento => {
         stockProductos.push(elemento)
     })
-    
     mostrarProductos(stockProductos)
-    recuperar()
-    
 })
 
 $(()=>{
