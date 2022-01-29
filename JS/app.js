@@ -145,7 +145,7 @@ finCompra.addEventListener('click',()=>{
 
 //Ejecucion del programa
 
-$.getJSON('data/stock.json', function(data){
+$.getJSON('/data/stock.json', function(data){
     data.forEach(elemento => {
         stockProductos.push(elemento)
     })
